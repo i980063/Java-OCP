@@ -3,6 +3,7 @@ package com.ocp.day01;
 public class BMIDemo1 {
     public static void main(String[] args) {//p
         System.out.println("Hello World!!");//sout
+        //計算BMI
         String name ="John";
         double height =170;//170.0
         double weight = 60;
