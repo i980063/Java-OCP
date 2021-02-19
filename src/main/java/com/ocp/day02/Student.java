@@ -1,5 +1,6 @@
 package com.ocp.day02;
 //data class
+//物件 = 實體,實例,instance
 public class Student {
     //屬性/變數/資產/欄位
     //static:類別的,靜態的
