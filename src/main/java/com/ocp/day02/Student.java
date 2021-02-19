@@ -8,6 +8,7 @@ public class Student {
     //方法
     //印出學生資料
     public void print(){
-        System.out.printf("%s %s %s\n",schoolName,name,age);
+        System.out.printf("%s %s %d\n"
+                ,schoolName,name,age);
     }
 }
