@@ -2,7 +2,8 @@ package com.ocp.day02;
 //data class
 public class Student {
     //屬性
-    public String schoolName;//學校
+    //public String schoolName;//學校
+    public static String schoolName;//學校，變成Global
     public String name;//姓名
     public int age;//年齡
     //方法
