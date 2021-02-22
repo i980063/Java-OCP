@@ -44,7 +44,7 @@ public class ATMSystem {
             while (true) {                
                 atm.menu();
                 System.out.println("按Enter後繼續");
-                new Scanner(System.in).nextLine();
+                new Scanner(System.in).nextLine();//nextLine = Enter
             }
 
     }
