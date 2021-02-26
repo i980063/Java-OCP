@@ -37,7 +37,7 @@ public class ArrayDemo4 {
         
         //JAVA 8 統計物件
         IntSummaryStatistics stat = IntStream.of(scores1).summaryStatistics();
-        System.out.println(stat);
-        System.out.println(stat.getMax());
+        System.out.println(stat);//全部的統計資料
+        System.out.println(stat.getMax());//取其中的值
     }
 }
