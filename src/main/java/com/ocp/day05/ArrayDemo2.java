@@ -27,6 +27,9 @@ public class ArrayDemo2 {
         }
         System.out.printf("總分: %d\n",sum2);
         
+        //計算平均
+        double avg = (double)sum2 / scores1.length;
+        System.out.printf("平均: %.2f\n",avg);
     }
     
 }
