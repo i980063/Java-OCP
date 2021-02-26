@@ -17,6 +17,8 @@ public class ArrayDemo {
         scores2[5] = 100;
         
         //列印成績
+        System.out.println(scores);
+        System.out.println(scores2);
         System.out.printf("數學:%s\n",Arrays.toString(scores));
         System.out.printf("國文:%s\n",Arrays.toString(scores2));
         
