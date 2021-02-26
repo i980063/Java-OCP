@@ -1,5 +1,7 @@
 package com.ocp.day05;
 
+import java.util.Arrays;
+
 public class ArrayDemo {
     public static void main(String[] args) {
         //全班有6個人此次考數學的成績列表
@@ -13,6 +15,10 @@ public class ArrayDemo {
         scores2[3] = 70;
         scores2[4] = 30;
         scores2[5] = 100;
+        
+        //列印成績
+        System.out.printf("數學:%s\n",Arrays.toString(scores));
+        System.out.printf("國文:%s\n",Arrays.toString(scores2));
         
     }
 }
