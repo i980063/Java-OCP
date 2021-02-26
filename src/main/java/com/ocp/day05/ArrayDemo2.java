@@ -20,7 +20,7 @@ public class ArrayDemo2 {
         
         System.out.printf("總分: %d\n",sum);
         
-        //JAVA for-in(for-each)
+        //JAVA7 for-in(for-each)
         int sum2 = 0;
         for(int x:scores1){
             sum2 += x;
@@ -30,6 +30,10 @@ public class ArrayDemo2 {
         //計算平均
         double avg = (double)sum2 / scores1.length;
         System.out.printf("平均: %.2f\n",avg);
+        
+        //JAVA8
+        
+        
     }
     
 }
