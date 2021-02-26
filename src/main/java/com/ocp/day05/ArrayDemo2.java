@@ -30,10 +30,6 @@ public class ArrayDemo2 {
         //計算平均
         double avg = (double)sum2 / scores1.length;
         System.out.printf("平均: %.2f\n",avg);
-        
-        //JAVA8
-        
-        
     }
     
 }
