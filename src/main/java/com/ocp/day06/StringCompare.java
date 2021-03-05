@@ -6,6 +6,7 @@ public class StringCompare {
         String s2 = new String("Java");
         String s3 = "Java";
         String s4 = "Java";
+        String s5 = "java";
         System.out.println(s1 == s2);
         System.out.println(s1.equals(s2));
         System.out.println(s3 == s4);
@@ -13,5 +14,6 @@ public class StringCompare {
         System.out.println(s1 == s3);
         System.out.println(s1.equals(s3));
         System.out.println(s1.intern() == s3);
+        System.out.println(s2.equalsIgnoreCase(s5));//忽略大小寫
     }
 }
