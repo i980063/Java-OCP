@@ -9,7 +9,7 @@ public class Account {
     //餘額查詢的方法
     public void printMoney(){
         //自己得private可以直接用
-        System.out.printf("餘額：$%d\n",money);
+        System.out.printf("可用餘額：$%d\n",money);
     }
     
     
@@ -27,21 +27,21 @@ public class Account {
     //2.驗證x是否大於目前餘額?
     if(x>money){
         System.out.println("提款金額不足!");
-        System.out.printf("餘額剩餘:$%d\n",money);
+        System.out.printf("可用餘額:$%d\n",money);
         return;//中斷方法
     }
     
     //3.驗證x是否大於10W
     if(x>10_0000){
         System.out.println("提款金額不可超過10萬!");
-        System.out.printf("餘額剩餘:$%d\n",money);
+        System.out.printf("可用餘額:$%d\n",money);
         return;
     }
     
     //4.進行提款程序
     System.out.println("提款成功!");
     money -=x;
-    System.out.printf("餘額剩餘:$%d\n",money);
+    System.out.printf("可用餘額:$%d\n",money);
   
   }
   
@@ -60,14 +60,14 @@ public class Account {
     //2.存款金額一定是要100的倍數
     if(x % 100 !=0){
         System.out.println("存款金額必須$100的倍數!");
-        //System.out.printf("餘額剩餘:$%d\n",money);
+        //System.out.printf("可用餘額:$%d\n",money);
         return;
     }
     
     //3.驗證y是否大於10W
     if(x > 10_0000){
         System.out.println("存款金額不可超過10萬!");
-        System.out.printf("餘額剩餘:$%d\n",money);
+        System.out.printf("可用餘額:$%d\n",money);
         return;
     }
     
