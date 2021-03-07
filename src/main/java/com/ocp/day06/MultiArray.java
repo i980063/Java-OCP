@@ -28,9 +28,15 @@ public class MultiArray {
         System.out.println(sum2);
         
         //JAVA 8
-        int sum3 = Stream.of(scores).flatMapToInt(s -> IntStream.of(s)).sum();
+        int sum3 = Stream.
+                of(scores).
+                flatMapToInt(s -> IntStream.of(s)).
+                sum();
         System.out.println(sum3);
-        int sum4 = Stream.of(scores).flatMapToInt(IntStream::of).sum();
+        int sum4 = Stream.
+                of(scores).
+                flatMapToInt(IntStream::of).
+                sum();
         System.out.println(sum4);
         
     }
