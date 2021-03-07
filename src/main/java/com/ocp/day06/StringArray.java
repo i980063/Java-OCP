@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class StringArray {
     public static void updateScore(String[] s) {
-        s[1]="90";
+        s[1]="90";//陣列的第二欄位
     }
     
     public static void main(String[] args) {
