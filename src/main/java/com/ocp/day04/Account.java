@@ -9,7 +9,7 @@ public class Account {
     //餘額查詢的方法
     public void printMoney(){
         //自己得private可以直接用
-        System.out.printf("$%d\n",money);
+        System.out.printf("餘額：$%d\n",money);
     }
     
     
