@@ -67,13 +67,13 @@ public class Account {
     //3.驗證y是否大於10W
     if(x > 10_0000){
         System.out.println("存款金額不可超過10萬!");
-        System.out.printf("可用餘額:$%d\n",money);
+        //System.out.printf("可用餘額:$%d\n",money);
         return;
     }
     
     //4.進行提款程序
     money +=x;
-    System.out.printf("存款成功，餘額:$%d\n",money);
+    System.out.printf("存款成功，可用餘額:$%d\n",money);
     }
         
    }
