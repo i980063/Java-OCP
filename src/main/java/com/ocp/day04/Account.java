@@ -60,7 +60,7 @@ public class Account {
     //2.存款金額一定是要100的倍數
     if(x % 100 !=0){
         System.out.println("存款金額必須$100的倍數!");
-        System.out.printf("餘額剩餘:$%d\n",money);
+        //System.out.printf("餘額剩餘:$%d\n",money);
         return;
     }
     
