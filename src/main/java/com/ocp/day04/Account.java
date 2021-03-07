@@ -31,14 +31,21 @@ public class Account {
         return;//中斷方法
     }
     
-    //3.驗證x是否大於10W
+    //3.提款金額一定是要1000的倍數
+    if(x % 1000 !=0){
+        System.out.println("提款金額必須$100的倍數!");
+        //System.out.printf("可用餘額:$%d\n",money);
+        return;
+    }
+    
+    //4.驗證x是否大於10W
     if(x>10_0000){
         System.out.println("提款金額不可超過10萬!");
         System.out.printf("可用餘額:$%d\n",money);
         return;
     }
     
-    //4.進行提款程序
+    //5.進行提款程序
     System.out.println("提款成功!");
     money -=x;
     System.out.printf("可用餘額:$%d\n",money);
