@@ -3,7 +3,8 @@ package com.ocp.day04;
 //銀行帳戶
 public class Account {
     //預設有100元，不寫就是預設0(int money)
-    private int money = 100;
+    //private int money = 100;
+    private int money = 0;
     
     
     //餘額查詢的方法
@@ -41,7 +42,7 @@ public class Account {
     //4.驗證x是否大於10W
     if(x>10_0000){
         System.out.println("提款金額不可超過10萬!");
-        System.out.printf("可用餘額:$%d\n",money);
+        //System.out.printf("可用餘額:$%d\n",money);
         return;
     }
     
