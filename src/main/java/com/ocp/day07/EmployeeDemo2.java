@@ -20,7 +20,8 @@ public class EmployeeDemo2 {
         
         //JAVA 8 for-each
         //Stream.of(employees).forEach(System.out::println);
-        Stream.of(employees).//串流化(e1.e2.e3.e4.e5)
+        Stream.//串流化
+            of(employees).//串流employees(e1.e2.e3.e4.e5)
                 forEach(e -> System.out.println(e));//=for(Employee e : employees)裡面的e；印出每個(e=e1,e2,e3,e4,e5)System.out.println(e)
     }
  
