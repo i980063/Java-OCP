@@ -18,7 +18,7 @@ public class EmployeeDemo {
         e2.setName("Mary");
         e2.setLanguage("Python");
         e2.setAge(30);
-        e2.setSalary(15000);
+        e2.setSalary(55000);
         System.out.println(e2.getName());
         System.out.println(e2.getLanguage());
         System.out.println(e2.getAge());

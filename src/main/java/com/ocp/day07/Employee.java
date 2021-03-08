@@ -6,6 +6,18 @@ public class Employee {
     private int age;
     private int salary;
     
+    //建構子(Constructor)
+    public Employee() {
+    }
+
+    public Employee(String name, String language, int age, int salary) {
+        this.name = name;
+        this.language = language;
+        this.age = age;
+        this.salary = salary;
+    }
+    
+    
     //進行屬性封裝(getter/setter)
 
     public String getName() {
@@ -41,4 +53,12 @@ public class Employee {
             this.salary = salary;
         }
     }
+    
+    
+    //複寫toString(Override)
+    @Override
+    public String toString() {
+        return "Employee{" + "name=" + name + ", language=" + language + ", age=" + age + ", salary=" + salary + '}';
+    }
+    
 }
