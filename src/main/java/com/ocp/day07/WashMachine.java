@@ -1,6 +1,9 @@
 package com.ocp.day07;
 
 public class WashMachine {
+    //BO 商業元件(商業Logic)
+    //DO 資料元件(純/存資料)
+     
     private boolean isopen;//預設值是false，預設關門
     private boolean havewater;//預設值是false，預設注水
     private int mode ;//預設是0
@@ -31,7 +34,7 @@ public class WashMachine {
     }
     //放水
     public void water(){
-        if(!isopen){//if(isopen = true)
+        if(!isopen){//if(isopen = false)
             System.out.println("注水");
             havewater = true;
         }else{
