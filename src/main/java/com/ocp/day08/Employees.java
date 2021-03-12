@@ -12,7 +12,7 @@ public class Employees {
     private Employees(){
 
     }
-    //提供一個 public static方法讓外界得到ˋ你建立的唯一物件(實例)
+    //提供一個 public static方法讓外界得到你建立的唯一物件(實例)
     public static Employees getEmployees(){
         return _instance;
     }
