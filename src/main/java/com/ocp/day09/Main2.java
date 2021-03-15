@@ -25,7 +25,7 @@ public class Main2 {
                   of(itemployees).
                   mapToInt(e -> e.getSalary().gerMoney())//從原本的型態"陣列"map轉換To變成Int(e(代號=e1,e2員工)的(.)薪資的(.)Moiney)
                   .summaryStatistics();
-        System.out.printf("IT部門統計 $%,d\n",stat.getSum());
+        System.out.printf("IT部門統計 $%,d\n",stat.getSum() );
         
         //SALES部門薪水加總
         int sum3 = Stream.
