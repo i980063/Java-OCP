@@ -2,6 +2,7 @@ package com.lab1;
 
 //員工管理工具
 
+import java.util.Random;
 import java.util.stream.Stream;
 
 public class EmployeeUtil {
@@ -29,4 +30,22 @@ public class EmployeeUtil {
         return Stream.of(directors).mapToInt(Director::getStockOptions).sum();
     }
     
+    //公差一員
+    public Employee getRandonEmployee(){
+        int n = new Random().nextInt(3);
+        switch(n){
+            case 0:
+                return new Employee(38000);
+            case 1:
+                Manager m = new Manager(68000);
+                m.setBudget(10_0000);
+                return m;
+            default:
+                Director d = new Director(88000);
+                d.setBudget(50_0000);
+                d.setStockOptions(10_0000);
+                return d;
+                
+        }
+    }  
 }
