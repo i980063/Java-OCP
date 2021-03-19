@@ -15,6 +15,7 @@ public class EmployeeUtil {
 //        return  sum;
         
         //JAVA8
-        return Stream.of(employees).mapToInt(e -> e.getSalary()).sum();
+        //return Stream.of(employees).mapToInt(e -> e.getSalary()).sum();
+        return Stream.of(employees).mapToInt(Employee::getSalary).sum();
     }
 }
