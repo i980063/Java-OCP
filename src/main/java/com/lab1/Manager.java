@@ -3,7 +3,7 @@ package com.lab1;
 
 public class Manager extends Employee {
 
-    private int budgert;
+    private int budget;
 
     public Manager() {
     }
