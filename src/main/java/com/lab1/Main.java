@@ -15,5 +15,8 @@ public class Main {
         int sum = util.getAllSalary(e1, e2, e3, e4, e5, e6);
         System.out.println(sum);
         
+        int sum2 = util.getAllSalary(e4 ,e5);
+        System.out.println(sum2);
+        
     }
 }
