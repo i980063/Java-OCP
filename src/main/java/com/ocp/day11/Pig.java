@@ -1,15 +1,9 @@
 package com.ocp.day11;
 
-public class Pig implements Animal{
+public class Pig extends AnimalImpl{
 
     @Override
     public void sound() {
         System.out.println("Wee wee");
-    }
-
-    @Override
-    public void sleep() {
-        System.out.println("ZZZ");
-    }
-    
+    } 
 }
