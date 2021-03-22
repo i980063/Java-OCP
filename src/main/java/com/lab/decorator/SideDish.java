@@ -9,7 +9,8 @@ public class SideDish extends Food{//配菜是食物
 
     @Override
     public String getName() {
-        return  name + "+" + food.getName();
+        //return  name + "+" + food.getName();
+        return food.getName() + "+" + name ;
     }
 
     @Override
