@@ -7,7 +7,6 @@ public class Dept {//部門
             String name = "寫程式";
             System.out.println(name);
             System.out.println(Dept.this.name);
-        }   
+        }
     }
-    
 }
