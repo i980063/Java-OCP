@@ -14,10 +14,10 @@ public class Anonymous3 {
         };
         add1.calc(10, 20);
         
-        Add add2 = (int x , int y) -> System.out.println(x+y);
+        Add add2 = (int x , int y) -> System.out.println(x + y);
         add2.calc(10, 50);
         
-        Add add3 = (x , y) -> System.out.println(x+y);
+        Add add3 = (x , y) -> System.out.println(x + y);
         add3.calc(10, 70);
     }
 }
