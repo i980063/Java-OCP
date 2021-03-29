@@ -8,6 +8,7 @@ public class FunctionDemo {
         Integer[] radius = {5,10,15};
         Consumer<Double> consumer = System.out::println;
         Function<Integer, Double> function = (t) -> t * t *3.14;
+        //Function<Integer, Double> function = (t) -> Math.pow(t, 2) * Math.PI;
         print(radius, consumer, function);
     }
     public static void print(Integer[] radius ,
