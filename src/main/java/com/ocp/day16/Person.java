@@ -14,15 +14,17 @@ public class Person {
         this.w = w;
     }
 
-    @Override
+@Override
     public boolean equals(Object obj) {
-        if(obj instanceof Person){
-            Person p =(Person)obj;
-            if(name.equals(p.name) && h.equals(p.h) && w.equals(p.w)){
+        if(obj instanceof Person) {
+            Person p = (Person)obj;
+            if(name.equals(p.name) && 
+               h.doubleValue() == p.h.doubleValue() && 
+               w.doubleValue() == p.w.doubleValue()) {
                 return true;
             }
         }
-        return false;
+        return false; 
     }
     
     @Override
