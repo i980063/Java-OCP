@@ -15,6 +15,17 @@ public class Person {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Person){
+            Person p =(Person)obj;
+            if(name.equals(p.name) && h.equals(p.h) && w.equals(p.w)){
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    @Override
     public String toString() {
         return "Person{" + "name=" + name + ", h=" + h + ", w=" + w + '}';
     }
