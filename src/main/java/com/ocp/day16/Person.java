@@ -1,5 +1,7 @@
 package com.ocp.day16;
 
+import java.util.Objects;
+
 public class Person {
     private String name;
     private Double h;
@@ -14,17 +16,37 @@ public class Person {
         this.w = w;
     }
 
-@Override
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 79 * hash + Objects.hashCode(this.name);
+        hash = 79 * hash + Objects.hashCode(this.h);
+        hash = 79 * hash + Objects.hashCode(this.w);
+        return hash;
+    }
+
+    @Override
     public boolean equals(Object obj) {
-        if(obj instanceof Person) {
-            Person p = (Person)obj;
-            if(name.equals(p.name) && 
-               h.doubleValue() == p.h.doubleValue() && 
-               w.doubleValue() == p.w.doubleValue()) {
-                return true;
-            }
+        if (this == obj) {
+            return true;
         }
-        return false; 
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Person other = (Person) obj;
+        if (!Objects.equals(this.name, other.name)) {
+            return false;
+        }
+        if (!Objects.equals(this.h, other.h)) {
+            return false;
+        }
+        if (!Objects.equals(this.w, other.w)) {
+            return false;
+        }
+        return true;
     }
     
     @Override
