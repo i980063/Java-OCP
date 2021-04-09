@@ -9,10 +9,10 @@ public class SexMain {
     public static void chickSex(Sex sex) {
         switch(sex){
             case man:
-                System.err.println("男性");
+                System.out.println("男性");
                 break;
             case female:
-                System.err.println("女性");
+                System.out.println("女性");
                 break;
             default:
                 System.err.println("ERROR");
