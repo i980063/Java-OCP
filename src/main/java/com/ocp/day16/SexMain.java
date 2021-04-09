@@ -4,7 +4,7 @@ public class SexMain {
     public static void main(String[] args) {
         //chickSex(1);
         chickSex(Sex.man);
-        chickSex(Sex.females);
+        chickSex(Sex.female);
     }
     public static void chickSex(Sex sex) {
         switch(sex){
