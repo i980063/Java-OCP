@@ -12,5 +12,11 @@ public class Person {
         this.name = name;
         this.h = h;
         this.w = w;
-    } 
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" + "name=" + name + ", h=" + h + ", w=" + w + '}';
+    }
+    
 }
