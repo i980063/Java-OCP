@@ -2,7 +2,6 @@ package com.ocp.day16;
 
 public class SexMain {
     public static void main(String[] args) {
-        //chickSex(1);
         chickSex(Sex.man);
         chickSex(Sex.female);
     }
