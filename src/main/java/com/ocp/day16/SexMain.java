@@ -4,14 +4,14 @@ public class SexMain {
     public static void main(String[] args) {
         //chickSex(1);
         chickSex(Sex.man);
-        chickSex(3);
+        chickSex(Sex.females);
     }
-    public static void chickSex(int value) {
-        switch(value){
-            case Sex.man:
+    public static void chickSex(Sex sex) {
+        switch(sex){
+            case man:
                 System.err.println("男性");
                 break;
-            case Sex.female:
+            case female:
                 System.err.println("女性");
                 break;
             default:
