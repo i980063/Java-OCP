@@ -12,7 +12,7 @@ public class ArrayListRemove {
           lotto.add(3); // 3
           lotto.add(5); // 4
           System.out.println(lotto);
-          lotto.remove(1);//根據維度為1
+          lotto.remove(1);//根據維度為 1(index) 考題
           System.out.println(lotto);
           lotto.remove(Integer.valueOf(4));//根據物件內的值
           System.out.println(lotto);
