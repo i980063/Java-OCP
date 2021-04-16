@@ -103,13 +103,13 @@ public class LottoJFrame extends javax.swing.JFrame {
         int idx = lotto_box.getSelectedIndex();
         switch(idx){
             case 0:
-                lotto_label.setText("[1,3,5,7,9]");
+                lotto_label.setText(lottoService.get539().toString());
                 break;
             case 1:
-                lotto_label.setText("[1,3,5]");
+                lotto_label.setText(lottoService.get4Stars().toString());
                 break;
             case 2:
-                lotto_label.setText("[1,3,5,7,9,11,13]");
+                lotto_label.setText(lottoService.getBig().toString());
                 break;
         }
     }//GEN-LAST:event_lotto_buttonActionPerformed
