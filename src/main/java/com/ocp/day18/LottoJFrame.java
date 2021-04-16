@@ -38,7 +38,7 @@ public class LottoJFrame extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("微軟正黑體", 1, 30)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 51, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("樂透");
+        jLabel1.setText("樂透電腦選號");
 
         lotto_box.setFont(new java.awt.Font("微軟正黑體", 1, 30)); // NOI18N
         lotto_box.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "今彩539", "四星彩", "大樂透" }));
@@ -73,11 +73,11 @@ public class LottoJFrame extends javax.swing.JFrame {
                         .addComponent(lotto_label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(81, 81, 81))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lotto_box, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(lotto_button, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
+                        .addComponent(lotto_button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(40, 40, 40))))
         );
         layout.setVerticalGroup(

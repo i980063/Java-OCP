@@ -32,11 +32,11 @@
                       <EmptySpace min="81" pref="81" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel1" pref="120" max="32767" attributes="0"/>
+                      <Component id="jLabel1" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="lotto_box" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lotto_button" pref="152" max="32767" attributes="0"/>
+                      <Component id="lotto_button" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -69,7 +69,7 @@
           <Color blue="0" green="33" red="ff" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="&#x6a02;&#x900f;"/>
+        <Property name="text" type="java.lang.String" value="&#x6a02;&#x900f;&#x96fb;&#x8166;&#x9078;&#x865f;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="lotto_box">
