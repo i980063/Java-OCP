@@ -103,13 +103,13 @@ public class LottoJFrame extends javax.swing.JFrame {
         int idx = lotto_box.getSelectedIndex();
         switch(idx){
             case 0:
-                lotto_label.setText(lottoService.get539().toString());
+                lotto_label.setText(lottoService.get539().toString().replace('[',' ').replace(']',' ').replace(',',' ').trim());//trim()去掉左右空白;.replace('[',' ')把[改成空白
                 break;
             case 1:
-                lotto_label.setText(lottoService.get4Stars().toString());
+                lotto_label.setText(lottoService.get4Stars().toString().replace('[',' ').replace(']',' ').replace(',',' ').trim());//trim()去掉左右空白;.replace('[',' ')把[改成空白
                 break;
             case 2:
-                lotto_label.setText(lottoService.getBig().toString());
+                lotto_label.setText(lottoService.getBig().toString().replace('[',' ').replace(']',' ').replace(',',' ').trim());//trim()去掉左右空白;.replace('[',' ')把[改成空白
                 break;
         }
     }//GEN-LAST:event_lotto_buttonActionPerformed
