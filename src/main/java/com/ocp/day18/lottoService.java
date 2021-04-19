@@ -12,6 +12,7 @@ public class lottoService {
         Set<Integer> lotto = new LinkedHashSet<>();
         while (lotto.size() < 5) {            
             lotto.add(r.nextInt(39) + 1);//加入到集合
+            String str = "%02d" + lotto;
         }
         return lotto;
     }
