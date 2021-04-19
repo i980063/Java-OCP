@@ -26,8 +26,11 @@ public class lottoService {
     
     public static Set<Integer> getBig(){
         Set<Integer> lotto = new LinkedHashSet<>();
-        while (lotto.size() < 7) {            
-            lotto.add(r.nextInt(41) + 1);//加入到集合
+        while (lotto.size() < 7) {
+            int n = r.nextInt(41) + 1;
+            lotto.add(n);
+            //String str = String.format("o2%d", n);
+            //lotto.add(r.nextInt(41) + 1);//加入到集合
         }
         return lotto;
     }
