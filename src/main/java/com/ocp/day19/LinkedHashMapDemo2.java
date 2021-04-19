@@ -1,9 +1,6 @@
 package com.ocp.day19;
-
-import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.stream.Stream;
 
 public class LinkedHashMapDemo2 {
     public static void main(String[] args) {
