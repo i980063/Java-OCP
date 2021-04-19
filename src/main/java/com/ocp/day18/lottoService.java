@@ -10,9 +10,8 @@ public class lottoService {
     static Random r = new Random();
     public static Set<Integer> get539(){
         Set<Integer> lotto = new LinkedHashSet<>();
-        while (lotto.size() < 5) {            
+        while (lotto.size() < 5) {
             lotto.add(r.nextInt(39) + 1);//加入到集合
-            String str = "%02d" + lotto;
         }
         return lotto;
     }
