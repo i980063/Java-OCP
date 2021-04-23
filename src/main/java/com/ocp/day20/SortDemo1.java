@@ -2,6 +2,7 @@ package com.ocp.day20;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class SortDemo1 {
@@ -12,6 +13,12 @@ public class SortDemo1 {
         Collections.sort(list);
         System.out.println(list);
         //排序(大到小)
-        Collections.sort(list, c);
+        Collections.sort(list, new Comparator<Integer>(){
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
+        System.out.println(list);
     }
 }
