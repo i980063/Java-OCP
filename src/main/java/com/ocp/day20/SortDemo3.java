@@ -22,7 +22,8 @@ public class SortDemo3 {
         
         //請按照分數小大來排序並置入一個新集合中
         List<User> SortedUsers = users.stream()
-                .sorted(Comparator.comparingInt(u -> u.getScore()))
+                //.sorted(Comparator.comparingInt(u -> u.getScore()))
+                .sorted(Comparator.comparingInt(User::getScore))
                 .collect(toList());
         System.out.println(SortedUsers);
     }
