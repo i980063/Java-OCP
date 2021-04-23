@@ -24,6 +24,7 @@ public class SortDemo3 {
         List<User> SortedUsers = users.stream()
                 //.sorted(Comparator.comparingInt(u -> u.getScore()))
                 .sorted(Comparator.comparingInt(User::getScore))
+                //.sorted(Comparator.comparingInt(User::getScore).reversed())//相反的結果
                 .collect(toList());
         System.out.println(SortedUsers);
     }
