@@ -14,7 +14,10 @@ public class SortDemo2 {
                 .sorted()//自然排序
                 //.sorted(Comparator.naturalOrder())//自然排序
                 //.sorted(Comparator.reverseOrder())//反向排序
+                //.sorted((o1, o2) -> o1.compareTo(o2))//自定義排序1
+                //.sorted((o1, o2) -> o1 - o2)
                 .collect(toList());
         System.out.println(sortedAndPassList);
+        
     }
 }
