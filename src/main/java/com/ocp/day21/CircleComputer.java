@@ -19,6 +19,7 @@ public class CircleComputer {
             double r = sc.nextDouble();
             double area = Math.pow(r, 2) * Math.PI;
             System.out.printf("area: %.2f\n", area);
+            return;
         } catch (Exception e) {
             System.out.println("輸入錯誤，錯誤次數:" + count);
             System.out.println("錯誤原因" + e);
