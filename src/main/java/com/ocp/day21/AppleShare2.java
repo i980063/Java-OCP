@@ -13,8 +13,10 @@ public class AppleShare2 {
         } catch (Exception e) {
             System.out.println("錯誤原因：" + e.getMessage());
             System.out.println("錯誤原因：" + e.getLocalizedMessage());
+            e.printStackTrace(System.out);//印出程式碼詳細資訊
             System.out.println(e);
         }
+        
         
     }
     
