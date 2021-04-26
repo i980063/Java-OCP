@@ -6,7 +6,7 @@ public class AppleShare {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("請輸入人數：");
-        int n =sc.nextInt();
+        int n =sc.nextInt();//n代表人數
 
         try {
             submit(n);
