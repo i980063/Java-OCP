@@ -1,5 +1,6 @@
 package com.ocp.day21;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /*
@@ -9,17 +10,23 @@ import java.util.Scanner;
 */
 public class CutGame {
     public static void main(String[] args) {
+        int count = 0;
         Scanner sc = new Scanner(System.in);
-
+        System.out.println("請輸入繩子的長度:");
+        int rope = 0;
         try {
-            int r = sc.nextInt();
-            for(){
-            
-            
-            }
-            
-            
-        } catch (Exception e) {
+            rope = sc.nextInt(); 
+        } catch (InputMismatchException e) {
+            System.out.println("長度錯誤請重新輸入" + e);
+            main(args);
         }
+        if(rope > 0){
+            while (rope >=5 ) {
+                count ++;
+                rope /= 2;
+            }
+            System.out.println("count:" + count);
+        }
+        
     }
 }
