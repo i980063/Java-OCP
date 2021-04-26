@@ -15,8 +15,8 @@ public class CircleComputer {
         } catch (Exception e) {
             System.out.println("輸入錯誤");
             System.out.println("錯誤原因" + e);
+            System.out.println("請重新輸入");
+            main(args);
         }
-
-
     }
 }
