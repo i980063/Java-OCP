@@ -12,6 +12,8 @@ public class AppleShare {
             submit(n);
         } catch (Exception e) {
             System.out.println("錯誤原因：" + e.getMessage());
+            System.out.println("錯誤原因：" + e.getLocalizedMessage());
+            System.out.println(e);
         }
         
     }
