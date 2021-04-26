@@ -13,7 +13,7 @@ public class CircleComputer {
         }
         Scanner sc = new Scanner(System.in);
         System.out.println("請輸入半徑:");
-        count++;
+        //count++;
 
         try {
             double r = sc.nextDouble();
@@ -24,6 +24,8 @@ public class CircleComputer {
             System.out.println("錯誤原因" + e);
             System.out.println("請重新輸入");
             main(args);
+        }finally{
+            count++;
         }
 
     }
