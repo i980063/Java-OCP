@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class InputExamScore2 {
     public static void main(String[] args) {
-        //Scanner sc = new Scanner(System.in);
-        //int score =  sc.nextInt();
-        //System.out.println("請輸入分數:");
-        int score = 90;
+        Scanner sc = new Scanner(System.in);
+        int score =  sc.nextInt();
+        System.out.println("請輸入分數:");
+        //int score = 90;
         try {
             check(score);
         } catch (ScoreRangException e) {
