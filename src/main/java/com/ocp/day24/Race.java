@@ -1,6 +1,10 @@
 package com.ocp.day24;
 
-public class Race {
+public class Race extends Thread{
+    @Override
+    public void run(){
+        job();
+    }
     public void job(){
         //執行緒名稱
         String tname = Thread.currentThread().getName();
