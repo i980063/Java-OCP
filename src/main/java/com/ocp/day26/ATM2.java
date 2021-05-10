@@ -13,5 +13,7 @@ public class ATM2 {
         t2.start();
         t3.start();
         
+        StringBuffer sb;
+        StringBuilder sb1;
     }
 }
